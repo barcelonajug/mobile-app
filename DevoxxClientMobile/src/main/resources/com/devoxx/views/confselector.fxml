@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+
+<?import com.gluonhq.charm.glisten.control.CharmListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Region?>
+<View fx:id="confSelectorView" styleClass="conf-selector-view" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devoxx.views.ConfSelectorPresenter">
+    <top>
+        <HBox>
+            <VBox fx:id="headers" styleClass="headers">
+                <Label fx:id="header" styleClass="header" text="%OTN.CONFERENCE_SELECTOR.HEADER.DEVOXX_VOXXED"/>
+                <Label fx:id="description" styleClass="description" text="%OTN.CONFERENCE_SELECTOR.DESCRIPTION"/>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS"/>
+            <StackPane fx:id="filterPane"/>
+        </HBox>
+    </top>
+    <center>
+        <CharmListView fx:id="selector" styleClass="conference-list-view"/>
+    </center>
+</View>
