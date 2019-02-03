@@ -18,7 +18,7 @@ allprojects {
     apply plugin: "com.github.hierynomus.license"
     
     license {
-        header = rootProject.file('LICENSE.txt')
+        header = rootProject.file('LICENSE')
         strictCheck true
         skipExistingHeaders true
         excludes(['**/*.json'])
