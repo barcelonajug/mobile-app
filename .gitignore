@@ -25,5 +25,14 @@ hs_err_pid*
 # Eclipse .settings files
 .settings
 
+# Intellij .idea directory
+.idea
+
+# Gradle .gradle directory
+.gradle
+
 # Gluon Cloud Link license
 gluoncloudlink_config.json
+
+# DevoxxClientMobile build
+DevoxxClientMobile/build
