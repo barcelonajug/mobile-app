@@ -1,32 +1,16 @@
 {
-  "uuid":"2982991f21138ab271c4ff154ecf26bc86364f15",
-  "bioAsHtml":"<p>TBD<\/p>\n",
-  "acceptedTalks":[
-    {
-      "talkType":"Conference",
-      "track":"Cloud, Containers &amp; Infrastructure",
-      "links":[
-        {
-          "href":"http:\/\/cfp.devoxx.pl\/api\/conferences\/DevoxxPL2018\/talks\/FVL-5658",
-          "rel":"http:\/\/cfp.devoxx.pl\/api\/profile\/talk",
-          "title":"More details about this talk"
-        },
-        {
-          "href":"http:\/\/cfp.devoxx.pl\/api\/conferences\/DevoxxPL2018\/speakers\/2982991f21138ab271c4ff154ecf26bc86364f15",
-          "rel":"http:\/\/cfp.devoxx.pl\/api\/profile\/speaker",
-          "title":"Marcin Żbik"
-        }
-      ],
-      "id":"FVL-5658",
-      "title":"When Terraform alone isn't enough"
-    }
-  ],
-  "company":"Demo Company",
-  "bio":"TBD",
-  "lastName":"User",
-  "firstName":"Demo",
-  "blog":null,
-  "avatarURL":"http:\/\/www.gravatar.com\/avatar\/0d3d7a47fdc05c624181667adfc98e54",
-  "twitter":null,
-  "lang":"pl"
+  "uuid" : "d2c05e60af702984122c68c8a46fc574fba6f726",
+  "bio" : "Dr. Venkat Subramaniam is an award-winning author, founder of Agile Developer, Inc., creator of agilelearner.com, and an instructional professor at the University of Houston. He has trained and mentored thousands of software developers in the US, Canada, Europe, and Asia, and is a regularly-invited speaker at several international conferences. Venkat helps his clients effectively apply and succeed with sustainable agile practices on their software projects. Venkat is a (co)author of multiple technical books, including the 2007 Jolt Productivity award winning book Practices of an Agile Developer. You can find a list of his books at agiledeveloper.com. You can reach him by email at venkats@agiledeveloper.com or on twitter at @venkat_s.",
+  "bioAsHtml" : "Dr. Venkat Subramaniam is an award-winning author, founder of Agile Developer, Inc., creator of agilelearner.com, and an instructional professor at the University of Houston. He has trained and mentored thousands of software developers in the US, Canada, Europe, and Asia, and is a regularly-invited speaker at several international conferences. Venkat helps his clients effectively apply and succeed with sustainable agile practices on their software projects. Venkat is a (co)author of multiple technical books, including the 2007 Jolt Productivity award winning book Practices of an Agile Developer. You can find a list of his books at agiledeveloper.com. You can reach him by email at venkats@agiledeveloper.com or on twitter at @venkat_s.",
+  "firstName" : "Venkat",
+  "lastName" : "Subramaniam",
+  "avatarURL" : "http://www.jbcnconf.com/2019/assets/img/speakers/venkat-subramaniam.jpg",
+  "company" : "",
+  "blog" : "http://agiledeveloper.com",
+  "twitter" : "@venkat_s",
+  "lang" : "en",
+  "acceptedTalks" : null,
+  "detailsRetrieved" : false,
+  "fullName" : "Venkat Subramaniam",
+  "summary" : "Dr. Venkat Subramaniam is an award-winning author, founder of Agile Developer, Inc., creator of agilelearner.com, and an instructional professor at the University of Houston. He has trained and mentored thousands of software developers in the US, Canada, Europe, and Asia, and is a regularly-invited speaker at several international conferences. Venkat helps his clients effectively apply and succeed with sustainable agile practices on their software projects. Venkat is a (co)author of multiple technical books, including the 2007 Jolt Productivity award winning book Practices of an Agile Developer. You can find a list of his books at agiledeveloper.com. You can reach him by email at venkats@agiledeveloper.com or on twitter at @venkat_s."
 }

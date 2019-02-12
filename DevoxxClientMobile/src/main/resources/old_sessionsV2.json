@@ -2,7 +2,7 @@
   {
     "roomId": "a_room_1",
     "notAllocated": false,
-    "fromTimeMillis": 1529478000000,
+    "fromTimeMillis": 1549238400000,
     "break": null,
     "roomSetup": "theatre",
     "talk": {
@@ -26,7 +26,7 @@
       "summary": "Opening session."
     },
     "fromTime": "09:00",
-    "toTimeMillis": 1529479800000,
+    "toTimeMillis": 1549238400000,
     "toTime": "09:30",
     "roomCapacity": 2100,
     "roomName": "Room 1",
@@ -36,7 +36,7 @@
   {
     "roomId": "a_room_1",
     "notAllocated": false,
-    "fromTimeMillis": 1529479800000,
+    "fromTimeMillis": 1549238400000,
     "break": null,
     "roomSetup": "theatre",
     "talk": {
@@ -60,7 +60,7 @@
       "summary": "What should we do, or leave undone, in a day or a lifetime? How much messiness should we accept? What balance of the new and familiar is the most fulfilling? These may seem like uniquely human quandaries; they're not. Computers, like us, confront limited space and time, so computer scientists have been grappling with similar problems for decades. And the solutions they’ve found have much to teach us.\r\nIn a lively, interdisciplinary talk, Brian Christian shows how algorithms developed for computers also untangle very human questions. They explain how to have better hunches and when to leave things to chance, how to deal with overwhelming choices and how best to connect with others. From finding a spouse to finding a parking spot, from organizing one’s inbox to pee"
     },
     "fromTime": "09:30",
-    "toTimeMillis": 1529483400000,
+    "toTimeMillis": 1549238400000,
     "toTime": "10:30",
     "roomCapacity": 2100,
     "roomName": "Room 1",
