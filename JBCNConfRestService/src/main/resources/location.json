@@ -1,0 +1,12 @@
+{
+	"id": 1,
+	"name": "JBCNConf Location",
+	"address1":"",
+	"address2":"",
+	"postcode":"08010",
+	"city": "Barcelona",
+	"country":"Spain",
+	"latitude":41.390205,
+	"longitude":2.154007,
+	"timezone":"UTC+1"
+}

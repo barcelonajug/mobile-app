@@ -3,11 +3,15 @@ package org.jbcn.rest;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import com.devoxx.model.Speaker;
+import com.devoxx.model.Talk;
+import com.devoxx.model.TalkSpeaker;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Handler;
@@ -26,6 +30,8 @@ public class RestVerticle extends AbstractVerticle {
 	private JsonArray allSpeakers;
 	private Map<String, JsonObject> speakerMap = new HashMap<>();
 	
+	private JsonObject location;
+	
 	@Override
 	public void start() throws Exception {		
 		readConferences(done -> {
@@ -37,6 +43,8 @@ public class RestVerticle extends AbstractVerticle {
 			
 			router.get("/speakers/:conferenceId").handler(this::getSpeakers);
 			router.get("/speaker/:conferenceId/:speakerId").handler(this::getSpeakerById);
+			
+			router.get("/location/:locationId").handler(this::getLocationById);
 			
 			vertx.createHttpServer().requestHandler(router::handle).listen(7199);		
 		});
@@ -59,6 +67,25 @@ public class RestVerticle extends AbstractVerticle {
 			speakerMap.put(speaker.getString("uuid"), speaker);
 		});
 
+		allSessions.forEach(sess -> {
+			JsonObject session = (JsonObject) sess;
+			Talk talk = session.getJsonObject("talk").mapTo(Talk.class);
+			List<TalkSpeaker> talkSpeakers = talk.getSpeakers();
+			for (TalkSpeaker talkSpeaker : talkSpeakers) {
+				String speakerId = talkSpeaker.getLink().getHref();
+				JsonObject speakerJson = speakerMap.get(speakerId);
+				JsonArray acceptedTalks = speakerJson.getJsonArray("acceptedTalks", new JsonArray());
+				if (acceptedTalks == null) {
+					acceptedTalks = new JsonArray();
+				}
+				acceptedTalks.add(JsonObject.mapFrom(talk));
+				speakerJson.put("acceptedTalks", acceptedTalks);
+			}
+		});
+		
+		
+		location = new JsonObject(new String(Files.readAllBytes(Paths.get("src/main/resources/location.json")), UTF_8));
+		
 		handler.handle(null);
 	}
 
@@ -85,4 +112,7 @@ public class RestVerticle extends AbstractVerticle {
 		context.response().end(speakerMap.get(speakerId).encode());
 	}
 
+	private void getLocationById(RoutingContext context) {
+		context.response().end(location.encode());
+	}
 }
