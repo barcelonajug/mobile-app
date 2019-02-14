@@ -25,7 +25,8 @@
  */
 package com.devoxx.model;
 
-import java.time.DateTimeException;
+import static java.time.temporal.ChronoUnit.DAYS;
+
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -34,65 +35,33 @@ import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import static java.time.temporal.ChronoUnit.DAYS;
 
 public class Conference {
 
     private static final Logger LOG = Logger.getLogger(Conference.class.getName());
 
-    private static final ZoneId DEFAULT_CONFERENCE_ZONE_ID = ZoneId.of("Europe/Brussels");
+    private static final ZoneId DEFAULT_CONFERENCE_ZONE_ID = ZoneId.of("Europe/Madrid");
 
-    private String id;
-    private String name;
-    private String website;
-    private String description;
-    private String imageURL;
-    private String scheduleURL;
-    private String eventImagesURL;
-    private String youTubeURL;
-    private String fromDate;
-    private String endDate;
+    private String id; 
+    private String name; 
+    private String website; 
+    private String imageURL; 
+    private String fromDate; 
+    private String endDate; 
     private ZonedDateTime fromDateTime;
     private ZonedDateTime endDateTime;
     private ZonedDateTime[] days;
-    private String cfpFromDate;
-    private String cfpEndDate;
-    private Type eventType;
-    private String cfpURL;
+    private Type eventType; 
+    private String cfpURL; 
     private String cfpVersion;
-    private boolean archived;
-    private boolean cfpActive;
-    private String importDate;
-    private String scheduleDate;
     private long locationId;
-    private String locationName;
-    private String timezone;
-    private String cfpAdminEmail;
-    private String fromEmail;
-    private String committeeEmail;
-    private String bccEmail;
-    private String bugReportEmail;
-    private String githubClientId;
-    private String githubSecret;
-    private String googleClientId;
-    private String googleSecret;
-    private String linkedInClientId;
-    private String linkedInSecret;
-    private String maxProposals;
     private boolean myBadgeActive;
-    List<Owner> owners;
-    List<Track> tracks;
-    List<SessionType> sessionTypes;
-    List<String> languages;
-    List<Floor> floorPlans;
+    private List<Track> tracks;
+    private List<SessionType> sessionTypes;
+    private List<Floor> floorPlans;
     
-    // TODO: Needed for WearService
-    private boolean selected;
-
-    private ZoneId timezoneId;
+    private ZoneId timezoneId = DEFAULT_CONFERENCE_ZONE_ID;
 
     public String getId() {
         return id;
@@ -118,44 +87,12 @@ public class Conference {
         this.website = website;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getImageURL() {
         return imageURL;
     }
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
-    }
-
-    public String getScheduleURL() {
-        return scheduleURL;
-    }
-
-    public void setScheduleURL(String scheduleURL) {
-        this.scheduleURL = scheduleURL;
-    }
-
-    public String getEventImagesURL() {
-        return eventImagesURL;
-    }
-
-    public void setEventImagesURL(String eventImagesURL) {
-        this.eventImagesURL = eventImagesURL;
-    }
-
-    public String getYouTubeURL() {
-        return youTubeURL;
-    }
-
-    public void setYouTubeURL(String youTubeURL) {
-        this.youTubeURL = youTubeURL;
     }
 
     public String getFromDate() {
@@ -182,22 +119,6 @@ public class Conference {
         }
     }
 
-    public String getCfpFromDate() {
-        return cfpFromDate;
-    }
-
-    public void setCfpFromDate(String cfpFromDate) {
-        this.cfpFromDate = cfpFromDate;
-    }
-
-    public String getCfpEndDate() {
-        return cfpEndDate;
-    }
-
-    public void setCfpEndDate(String cfpEndDate) {
-        this.cfpEndDate = cfpEndDate;
-    }
-
     public Type getEventType() {
         return eventType;
     }
@@ -222,38 +143,6 @@ public class Conference {
         this.cfpVersion = cfpVersion;
     }
 
-    public boolean isArchived() {
-        return archived;
-    }
-
-    public void setArchived(boolean archived) {
-        this.archived = archived;
-    }
-
-    public boolean isCfpActive() {
-        return cfpActive;
-    }
-
-    public void setCfpActive(Boolean cfpActive) {
-        this.cfpActive = cfpActive == null ? false : cfpActive;
-    }
-
-    public String getImportDate() {
-        return importDate;
-    }
-
-    public void setImportDate(String importDate) {
-        this.importDate = importDate;
-    }
-
-    public String getScheduleDate() {
-        return scheduleDate;
-    }
-
-    public void setScheduleDate(String scheduleDate) {
-        this.scheduleDate = scheduleDate;
-    }
-
     public long getLocationId() {
         return locationId;
     }
@@ -262,142 +151,12 @@ public class Conference {
         this.locationId = locationId;
     }
 
-    public String getLocationName() {
-        return locationName;
-    }
-
-    public void setLocationName(String locationName) {
-        this.locationName = locationName;
-    }
-
-    public String getTimezone() {
-        return timezone;
-    }
-
-    public void setTimezone(String timezone) {
-        this.timezone = timezone;
-        try {
-            this.timezoneId = ZoneId.of(timezone);
-        } catch (DateTimeException e) {
-            LOG.log(Level.WARNING, "Failed to convert timezone: " + timezone + ", using default timezone (Europe/Brussels) instead.");
-            this.timezoneId = DEFAULT_CONFERENCE_ZONE_ID;
-        }
-
-        if (this.fromDate != null && this.endDate != null && this.timezoneId != null) {
-            calculateConferenceDays();
-        }
-    }
-
-    public String getCfpAdminEmail() {
-        return cfpAdminEmail;
-    }
-
-    public void setCfpAdminEmail(String cfpAdminEmail) {
-        this.cfpAdminEmail = cfpAdminEmail;
-    }
-
-    public String getFromEmail() {
-        return fromEmail;
-    }
-
-    public void setFromEmail(String fromEmail) {
-        this.fromEmail = fromEmail;
-    }
-
-    public String getCommitteeEmail() {
-        return committeeEmail;
-    }
-
-    public void setCommitteeEmail(String committeeEmail) {
-        this.committeeEmail = committeeEmail;
-    }
-
-    public String getBccEmail() {
-        return bccEmail;
-    }
-
-    public void setBccEmail(String bccEmail) {
-        this.bccEmail = bccEmail;
-    }
-
-    public String getBugReportEmail() {
-        return bugReportEmail;
-    }
-
-    public void setBugReportEmail(String bugReportEmail) {
-        this.bugReportEmail = bugReportEmail;
-    }
-
-    public String getGithubClientId() {
-        return githubClientId;
-    }
-
-    public void setGithubClientId(String githubClientId) {
-        this.githubClientId = githubClientId;
-    }
-
-    public String getGithubSecret() {
-        return githubSecret;
-    }
-
-    public void setGithubSecret(String githubSecret) {
-        this.githubSecret = githubSecret;
-    }
-
-    public String getGoogleClientId() {
-        return googleClientId;
-    }
-
-    public void setGoogleClientId(String googleClientId) {
-        this.googleClientId = googleClientId;
-    }
-
-    public String getGoogleSecret() {
-        return googleSecret;
-    }
-
-    public void setGoogleSecret(String googleSecret) {
-        this.googleSecret = googleSecret;
-    }
-
-    public String getLinkedInClientId() {
-        return linkedInClientId;
-    }
-
-    public void setLinkedInClientId(String linkedInClientId) {
-        this.linkedInClientId = linkedInClientId;
-    }
-
-    public String getLinkedInSecret() {
-        return linkedInSecret;
-    }
-
-    public void setLinkedInSecret(String linkedInSecret) {
-        this.linkedInSecret = linkedInSecret;
-    }
-
-    public String getMaxProposals() {
-        return maxProposals;
-    }
-
-    public void setMaxProposals(String maxProposals) {
-        this.maxProposals = maxProposals;
-    }
-
     public boolean isMyBadgeActive() {
         return myBadgeActive;
     }
 
     public void setMyBadgeActive(boolean myBadgeActive) {
         this.myBadgeActive = myBadgeActive;
-    }
-
-    public List<Owner> getOwners() {
-        return owners;
-    }
-
-    public void setOwners(List<Owner> owners) {
-        this.owners = owners;
     }
 
     public List<Track> getTracks() {
@@ -416,14 +175,6 @@ public class Conference {
         this.sessionTypes = sessionTypes;
     }
 
-    public List<String> getLanguages() {
-        return languages;
-    }
-
-    public void setLanguages(List<String> languages) {
-        this.languages = languages;
-    }
-
     public List<Floor> getFloorPlans() {
         return floorPlans;
     }
@@ -440,6 +191,10 @@ public class Conference {
         return endDateTime;
     }
 
+    public void setConferenceZoneId(String zoneId) {
+    	this.timezoneId = ZoneId.of(zoneId);
+    }
+    
     public ZoneId getConferenceZoneId() {
         return timezoneId;
     }
@@ -481,25 +236,7 @@ public class Conference {
 
     public String getCountry() {
         String[] split = name.split(" ");
-        switch (getEventType()) {
-            case DEVOXX:
-                // Devoxx Belgium 2018
-                // Devoxx UK 2018
-                return split.length >= 1 ? split[1] : "";
-            case VOXXED:
-                // Voxxed Days Ticino 2018
-                // VoxxedDays Microservices 2018
-                return split.length >= 2 ? split[split.length - 2] : "";
-        }
-        return "";
-    }
-
-    public boolean isSelected() {
-        return selected;
-    }
-
-    public void setSelected(boolean selected) {
-        this.selected = selected;
+        return split.length >= 1 ? split[1] : "";
     }
 
     @Override
@@ -524,9 +261,8 @@ public class Conference {
     }
     
     public enum Type {
-        DEVOXX("Devoxx", "Devoxx"),
-        VOXXED("Voxxed", "VoxxedDays"),
-        MEETUP("Meetup", "Meetup");
+    	MEETUP("Meetup", "Meetup"),
+        CONFERENCE("Conference", "Conference");    	
 
         private String name;
         private String displayName;

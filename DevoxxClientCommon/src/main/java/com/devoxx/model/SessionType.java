@@ -28,11 +28,8 @@ package com.devoxx.model;
 public class SessionType {
 
     private long id;
-    private String code;
     private String name;
     private boolean pause;
-    private double duration;
-    private String color;
 
     public long getId() {
         return id;
@@ -40,14 +37,6 @@ public class SessionType {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     public String getName() {
@@ -66,19 +55,4 @@ public class SessionType {
         this.pause = pause;
     }
 
-    public double getDuration() {
-        return duration;
-    }
-
-    public void setDuration(double duration) {
-        this.duration = duration;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
 }

@@ -29,10 +29,6 @@ public class Track {
 
     private String id;
     private String name;
-    private String description;
-    private String imageURL;
-    private String categoryId;
-    private String categoryName;
 
     public String getId() {
         return id;
@@ -50,47 +46,11 @@ public class Track {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getImageURL() {
-        return imageURL;
-    }
-
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
-    }
-
-    public String getCategoryId() {
-        return categoryId;
-    }
-
-    public void setCategoryId(String categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
-    }
-
     @Override
     public String toString() {
         return "Track{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", imageURL='" + imageURL + '\'' +
-                ", categoryId='" + categoryId + '\'' +
-                ", categoryName='" + categoryName + '\'' +
                 '}';
     }
 }
