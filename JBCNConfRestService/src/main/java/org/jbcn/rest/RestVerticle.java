@@ -1,6 +1,9 @@
 package org.jbcn.rest;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -18,6 +21,11 @@ public class RestVerticle extends AbstractVerticle {
 	private JsonArray allConferences;
 	private Map<String, JsonObject> conferenceMap = new HashMap<>();
 	
+	private JsonArray allSessions;
+	
+	private JsonArray allSpeakers;
+	private Map<String, JsonObject> speakerMap = new HashMap<>();
+	
 	@Override
 	public void start() throws Exception {		
 		readConferences(done -> {
@@ -25,6 +33,10 @@ public class RestVerticle extends AbstractVerticle {
 			
 			router.get("/conferences").handler(this::getConferences);
 			router.get("/conferences/:conferenceId").handler(this::getConferenceById);
+			router.get("/sessions/:conferenceId").handler(this::getSessions);
+			
+			router.get("/speakers/:conferenceId").handler(this::getSpeakers);
+			router.get("/speaker/:conferenceId/:speakerId").handler(this::getSpeakerById);
 			
 			vertx.createHttpServer().requestHandler(router::handle).listen(7199);		
 		});
@@ -33,12 +45,20 @@ public class RestVerticle extends AbstractVerticle {
 
 	
 	private void readConferences(Handler<Void> handler) throws IOException {
-		allConferences = new JsonArray(new String(Files.readAllBytes(Paths.get("src/main/resources/allConferences.json")), "UTF-8"));
+		allConferences = new JsonArray(new String(Files.readAllBytes(Paths.get("src/main/resources/allConferences.json")), UTF_8));
 		allConferences.forEach(conf -> {
 			JsonObject conference = (JsonObject) conf;
 			conferenceMap.put(conference.getString("id"), conference);
 		});
 		
+		allSessions = new JsonArray(new String(Files.readAllBytes(Paths.get("src/main/resources/sessions.json")), UTF_8));
+
+		allSpeakers = new JsonArray(new String(Files.readAllBytes(Paths.get("src/main/resources/speakers.json")), UTF_8));
+		allSpeakers.forEach(conf -> {
+			JsonObject speaker = (JsonObject) conf;
+			speakerMap.put(speaker.getString("uuid"), speaker);
+		});
+
 		handler.handle(null);
 	}
 
@@ -47,9 +67,22 @@ public class RestVerticle extends AbstractVerticle {
 		context.response().end(allConferences.encode());
 	}
 	
-
 	private void getConferenceById(RoutingContext context) {
 		String conferenceId = context.pathParam("conferenceId");
 		context.response().end(conferenceMap.get(conferenceId).encode());		
 	}
+	
+	private void getSessions(RoutingContext context) {
+		context.response().end(allSessions.encode());
+	}
+	
+	private void getSpeakers(RoutingContext context) {
+		context.response().end(allSpeakers.encode());
+	}
+	
+	private void getSpeakerById(RoutingContext context) {
+		String speakerId = context.pathParam("speakerId");
+		context.response().end(speakerMap.get(speakerId).encode());
+	}
+
 }

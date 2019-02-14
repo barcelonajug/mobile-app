@@ -105,7 +105,6 @@ import com.gluonhq.connect.ConnectState;
 import com.gluonhq.connect.GluonObservableList;
 import com.gluonhq.connect.GluonObservableObject;
 import com.gluonhq.connect.converter.JsonInputConverter;
-import com.gluonhq.connect.converter.JsonIterableInputConverter;
 import com.gluonhq.connect.provider.DataProvider;
 import com.gluonhq.connect.provider.RestClient;
 
@@ -380,16 +379,17 @@ public class RestService implements Service {
 
     @Override
     public GluonObservableList<Conference> retrievePastConferences() {
-        RemoteFunctionList fnConferences = RemoteFunctionBuilder.create("conferences")
-                .param("time", "past")
-                .param("type", "")
-                .list();
-        final GluonObservableList<Conference> conferences = fnConferences.call(Conference.class);
-        conferences.setOnFailed(e -> LOG.log(
-                Level.WARNING,
-                String.format(REMOTE_FUNCTION_FAILED_MSG, "conferences" + " in retrievePastConferences()"),
-                e.getSource().getException()));
-        return conferences;
+//        RemoteFunctionList fnConferences = RemoteFunctionBuilder.create("conferences")
+//                .param("time", "past")
+//                .param("type", "")
+//                .list();
+//        final GluonObservableList<Conference> conferences = fnConferences.call(Conference.class);
+//        conferences.setOnFailed(e -> LOG.log(
+//                Level.WARNING,
+//                String.format(REMOTE_FUNCTION_FAILED_MSG, "conferences" + " in retrievePastConferences()"),
+//                e.getSource().getException()));
+//        return conferences;
+    	throw new RuntimeException("Not used anymore");
     }
     
     @Override
@@ -495,12 +495,9 @@ public class RestService implements Service {
 
         sessions.clear();
 
-        RemoteFunctionList fnSessions = RemoteFunctionBuilder.create("sessionsV2")
-                .param("cfpEndpoint", getCfpURL())
-                .param("conferenceId", getConference().getCfpVersion())
-                .list();
+        RestClient client = RestClient.create().host(REST_HOST).path("sessions/" + getConference().getId()).method("GET").contentType("application/json");
 
-        GluonObservableList<Session> sessionsList = fnSessions.call(Session.class);
+        GluonObservableList<Session> sessionsList = DataProvider.retrieveList(client.createListDataReader(Session.class));
         ListChangeListener<Session> sessionsListChangeListener = change -> {
             while (change.next()) {
                 for (Session session : change.getAddedSubList()) {
@@ -547,12 +544,9 @@ public class RestService implements Service {
 
         speakers.clear();
 
-        RemoteFunctionList fnSpeakers = RemoteFunctionBuilder.create("speakers")
-                .param("cfpEndpoint", getCfpURL())
-                .param("conferenceId", getConference().getCfpVersion())
-                .list();
+        RestClient client = RestClient.create().host(REST_HOST).path("speakers/" + getConference().getId()).method("GET").contentType("application/json");
 
-        GluonObservableList<Speaker> speakersList = fnSpeakers.call(Speaker.class);
+        GluonObservableList<Speaker> speakersList = DataProvider.retrieveList(client.createListDataReader(Speaker.class));
         speakersList.setOnFailed(e -> {
             retrievingSpeakers.set(false);
             LOG.log(Level.WARNING, String.format(REMOTE_FUNCTION_FAILED_MSG, "speakers"), e.getSource().getException());
@@ -577,13 +571,9 @@ public class RestService implements Service {
             if (speakerWithUuid.isDetailsRetrieved()) {
                 return new ReadOnlyObjectWrapper<>(speakerWithUuid).getReadOnlyProperty();
             } else {
-                RemoteFunctionObject fnSpeaker = RemoteFunctionBuilder.create("speaker")
-                        .param("cfpEndpoint", getCfpURL())
-                        .param("conferenceId", getConference().getCfpVersion())
-                        .param("uuid", uuid)
-                        .object();
-
-                GluonObservableObject<Speaker> gluonSpeaker = fnSpeaker.call(Speaker.class);
+            	
+                RestClient client = RestClient.create().host(REST_HOST).path("speaker/"+getConference().getId()+"/"+uuid).method("GET").contentType("application/json");                
+                GluonObservableObject<Speaker> gluonSpeaker = DataProvider.retrieveObject(client.createObjectDataReader(Speaker.class));
                 gluonSpeaker.setOnSucceeded(e -> {
                     updateSpeakerDetails(gluonSpeaker.get());
                 });

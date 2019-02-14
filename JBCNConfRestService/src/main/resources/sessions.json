@@ -1,0 +1,1103 @@
+[ {
+  "slotId" : "5c3e5e7f38da16698cf41b29_a_room_4_Tuesday_09:00_10:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Tuesday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1559026800000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1559030400000,
+  "talk" : {
+    "id" : "5c3e5e7f38da16698cf41b29",
+    "title" : "Evolving a Pragmatic, Clean Architecture  - A Craftsman's Guide",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Are you in a mood for a brainstorm? Join this critical review of the major decisions taken in a typical enterprise application architecture and learn to balance pragmatism with your design goals. Find out how to do just-in-time design to keep as much use-cases as simple as possible.\n\n\nThe core purpose of this presentation is to learn to strike a **balance between pragmatism and maintainability** in your design. Without continuous refactoring, a simple design will inevitably degenerate into a Big Ball of Mud, under the assault of the new features and bugfixes. On the other hand, very highly-factored code can burden the take-off of the development and end up freezing the mindset in some rigid 'a-priori' design.\n\nThe end goal of this talk is to challenge you to rethink critically the architecture of your own systems, and seek ways to simplify it to match your actual needs, with a pragmatic mindset.\n\n\"Architecture is the art of postponing decisions\", said Uncle Bob. This talk takes this idea further and explains an optimal mindset about designing enterprise applications: Evolving (Continuously Refactoring) a Pragmatic (Simple), Clean (aka Onion) Architecture, aiming to provide Developer Safety™️ and Comfort™️. It’s the philosophy that Victor distilled over the past 5 years, designing and implementing 9 applications as IBM Lead Architect, and delivering trainings and advises to many other companies.\n\nYou’ll learn how to break data into pieces (Fit Entities, Value Objects, Data Transfer Objects), how to keep the logic simple (Facades, Domain Services, logic extraction patterns, Mappers, AOP), layering to enforce boundaries (keeping DTOs out of your logic, Dependency Inversion Principle), and many more, all in a dynamic, interactive and extremely entertaining session.\n",
+    "summaryAsHtml" : "Are you in a mood for a brainstorm? Join this critical review of the major decisions taken in a typical enterprise application architecture and learn to balance pragmatism with your design goals. Find out how to do just-in-time design to keep as much use-cases as simple as possible.\n\n\nThe core purpose of this presentation is to learn to strike a **balance between pragmatism and maintainability** in your design. Without continuous refactoring, a simple design will inevitably degenerate into a Big Ball of Mud, under the assault of the new features and bugfixes. On the other hand, very highly-factored code can burden the take-off of the development and end up freezing the mindset in some rigid 'a-priori' design.\n\nThe end goal of this talk is to challenge you to rethink critically the architecture of your own systems, and seek ways to simplify it to match your actual needs, with a pragmatic mindset.\n\n\"Architecture is the art of postponing decisions\", said Uncle Bob. This talk takes this idea further and explains an optimal mindset about designing enterprise applications: Evolving (Continuously Refactoring) a Pragmatic (Simple), Clean (aka Onion) Architecture, aiming to provide Developer Safety™️ and Comfort™️. It’s the philosophy that Victor distilled over the past 5 years, designing and implementing 9 applications as IBM Lead Architect, and delivering trainings and advises to many other companies.\n\nYou’ll learn how to break data into pieces (Fit Entities, Value Objects, Data Transfer Objects), how to keep the logic simple (Facades, Domain Services, logic extraction patterns, Mappers, AOP), layering to enforce boundaries (keeping DTOs out of your logic, Dependency Inversion Principle), and many more, all in a dynamic, interactive and extremely entertaining session.\n",
+    "tags" : [ {
+      "value" : "Clean Architecture"
+    }, {
+      "value" : "Pragmatic Design"
+    }, {
+      "value" : "Clean Code"
+    }, {
+      "value" : "Continuous Refactoring"
+    }, {
+      "value" : "Facade"
+    }, {
+      "value" : "Domain Service"
+    }, {
+      "value" : "Value Object"
+    }, {
+      "value" : "Emerging Architecture"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "d27efdbbf9293c1d2cbcb35559c2558a0707a484",
+        "rel" : "d27efdbbf9293c1d2cbcb35559c2558a0707a484",
+        "title" : "Victor Rentea"
+      },
+      "name" : "Victor Rentea"
+    } ]
+  }
+}, {
+  "slotId" : "5c3e5dbb38da16698cf41b28_a_room_3_Monday_11:00_12:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Monday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1558947600000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1558951200000,
+  "talk" : {
+    "id" : "5c3e5dbb38da16698cf41b28",
+    "title" : "Incremental adoption of microservices with an application gateway",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "An application gateway is a piece of infrastructure that helps existing applications incrementally adopt new architectures like microservices and serverless. It is not as single purposed as an API gateway, and not as complicated as a full service mesh and provides immediate value. In this talk we’ll explore this emerging pattern.\n\nIn this talk, we'll explore how to leverage an application gateway to get value out of your existing architecture while moving to microservices and serverless. This application gateway uses technologies like Envoy Proxy, GraphQL, and HTTP/2 to help solve some of these problems",
+    "summaryAsHtml" : "An application gateway is a piece of infrastructure that helps existing applications incrementally adopt new architectures like microservices and serverless. It is not as single purposed as an API gateway, and not as complicated as a full service mesh and provides immediate value. In this talk we’ll explore this emerging pattern.\n\nIn this talk, we'll explore how to leverage an application gateway to get value out of your existing architecture while moving to microservices and serverless. This application gateway uses technologies like Envoy Proxy, GraphQL, and HTTP/2 to help solve some of these problems",
+    "tags" : [ {
+      "value" : "service mesh"
+    }, {
+      "value" : "microservices"
+    }, {
+      "value" : "cloud"
+    }, {
+      "value" : "containers"
+    }, {
+      "value" : "envoy proxy"
+    }, {
+      "value" : "grpc"
+    }, {
+      "value" : "istio"
+    }, {
+      "value" : "serverless"
+    }, {
+      "value" : "functions"
+    }, {
+      "value" : "FaaS"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "5f729db9302ead529bf5818e137c0d3117f33fec",
+        "rel" : "5f729db9302ead529bf5818e137c0d3117f33fec",
+        "title" : "Christian Posta"
+      },
+      "name" : "Christian Posta"
+    } ]
+  }
+}, {
+  "slotId" : "5c36672c38da16698cf41add_a_room_2_Tuesday_09:00_10:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Tuesday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1559026800000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1559030400000,
+  "talk" : {
+    "id" : "5c36672c38da16698cf41add",
+    "title" : "Me, My Code and I",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "Some say they can read people and tell by their expressions or body language what kind of personality they have. But what if it is possible to read people from the code they write? It would perhaps be possible to tell who to avoid because they are a little bit aggressive and who to approach because they like to help out other people. In this talk we will explore what research is conducted on the relation between personality traits and programming semantics.",
+    "summaryAsHtml" : "Some say they can read people and tell by their expressions or body language what kind of personality they have. But what if it is possible to read people from the code they write? It would perhaps be possible to tell who to avoid because they are a little bit aggressive and who to approach because they like to help out other people. In this talk we will explore what research is conducted on the relation between personality traits and programming semantics.",
+    "tags" : [ {
+      "value" : "#cleancode"
+    }, {
+      "value" : "#design"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "f99b4c8793cc70d6cfcb9b1c78e7c99a76b10d2e",
+        "rel" : "f99b4c8793cc70d6cfcb9b1c78e7c99a76b10d2e",
+        "title" : "Rosanne Joosten"
+      },
+      "name" : "Rosanne Joosten"
+    } ]
+  }
+}, {
+  "slotId" : "5c5225df9034ae38180b151e_a_room_4_Tuesday_11:00_12:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Tuesday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1559034000000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1559037600000,
+  "talk" : {
+    "id" : "5c5225df9034ae38180b151e",
+    "title" : "Serverless Java Challenges and Triumphs",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Serverless Functions are hot, developer and corporate interest are exploding! But let’s face it, although Java is one of the most popular programming languages in the world it isn’t the most popular language for writing functions—at least not yet. According to James Governor, “When Web Companies Grow Up They Turn into Java shops” so as functions become mainstream will Java become the dominant language for authoring functions? Can it be?\n\nIn this hands-on session, we will examine the challenges of using Java for Serverless functions and the latest features provided by the Java platform that address them. We will also dig into the open source Fn project’s unparalleled Java support (including Kotlin and Graal) which makes it possible to build, test, and scale out Java-based functions applications.",
+    "summaryAsHtml" : "Serverless Functions are hot, developer and corporate interest are exploding! But let’s face it, although Java is one of the most popular programming languages in the world it isn’t the most popular language for writing functions—at least not yet. According to James Governor, “When Web Companies Grow Up They Turn into Java shops” so as functions become mainstream will Java become the dominant language for authoring functions? Can it be?\n\nIn this hands-on session, we will examine the challenges of using Java for Serverless functions and the latest features provided by the Java platform that address them. We will also dig into the open source Fn project’s unparalleled Java support (including Kotlin and Graal) which makes it possible to build, test, and scale out Java-based functions applications.",
+    "tags" : [ {
+      "value" : "Serverless"
+    }, {
+      "value" : "FaaS"
+    }, {
+      "value" : "Docker"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "a744f52d967ebb543100a1215f9fe38080a664f0",
+        "rel" : "a744f52d967ebb543100a1215f9fe38080a664f0",
+        "title" : "David Delabassee"
+      },
+      "name" : "David Delabassee"
+    } ]
+  }
+}, {
+  "slotId" : "5c48ec449034ae38180b14dd_a_room_1_Monday_09:00_10:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Monday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1558940400000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1558944000000,
+  "talk" : {
+    "id" : "5c48ec449034ae38180b14dd",
+    "title" : "My Kotlin is better than your Java!",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "TLDR: The big discussion:  Kotlin or Java, to migrate or not to migrate and why...\n\nThe world of languages on the JVM has seen alternatives to Java come and go. Kotlin is probably the most popular one at this moment. Although Java is still one of the most commonly used programming languages, Kotlin seems to keep growing very fast. Where Java is known for its verbosity, Kotlin aims at making programming easier. On the other hand, Kotlin is a mix of paradigms and forces you to learn yet another language. Moreover, with all the new features that are rapidly introduced in Java, is Kotlin actually needed? So what are the aspects where they differ from each other? In which situations should we choose the one or the other?  Should we migrate to Kotlin or is Java good enough? As Kotlin claims full interoperability with Java, should we even choose?\nIn this talk we will fire up the battle between Kotlin and Java. In this battle one of us will root for Java while the other cheers for Kotlin. Who wins? That is totally up to you. The audience will be judge and jury. So...bring it on.\n",
+    "summaryAsHtml" : "TLDR: The big discussion:  Kotlin or Java, to migrate or not to migrate and why...\n\nThe world of languages on the JVM has seen alternatives to Java come and go. Kotlin is probably the most popular one at this moment. Although Java is still one of the most commonly used programming languages, Kotlin seems to keep growing very fast. Where Java is known for its verbosity, Kotlin aims at making programming easier. On the other hand, Kotlin is a mix of paradigms and forces you to learn yet another language. Moreover, with all the new features that are rapidly introduced in Java, is Kotlin actually needed? So what are the aspects where they differ from each other? In which situations should we choose the one or the other?  Should we migrate to Kotlin or is Java good enough? As Kotlin claims full interoperability with Java, should we even choose?\nIn this talk we will fire up the battle between Kotlin and Java. In this battle one of us will root for Java while the other cheers for Kotlin. Who wins? That is totally up to you. The audience will be judge and jury. So...bring it on.\n",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "Kotlin"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "5d1b321ccc69de748beba885f56dec92485f328a",
+        "rel" : "5d1b321ccc69de748beba885f56dec92485f328a",
+        "title" : "Paulien van Alst"
+      },
+      "name" : "Paulien van Alst"
+    }, {
+      "link" : {
+        "href" : "4933804ca1248303098eaa459ba614f4bbbbada1",
+        "rel" : "4933804ca1248303098eaa459ba614f4bbbbada1",
+        "title" : "Brian Vermeer"
+      },
+      "name" : "Brian Vermeer"
+    } ]
+  }
+}, {
+  "slotId" : "5c3666d138da16698cf41adc_a_room_1_Tuesday_09:00_10:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Tuesday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1559026800000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1559030400000,
+  "talk" : {
+    "id" : "5c3666d138da16698cf41adc",
+    "title" : "Bootiful Reactive Testing & CDC with Spring Boot",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Join us for an exploration of testing a reactive Spring Boot 2.x application. Test driven development gives us the confidence necessary to improve our code faster, safely. But how do you test components and services, as well as integrations across distributed systems, while maintaining fast feedback loops, and how do you do all of this within the context of reactive Java? In this talk, we'll look at how to test imperative components, reactive data flows, and mocks. We’ll examine how to take advantage of test slices, and how to test web applications. We'll look at how to ensure that API producers and consumers work well together using consumer driven contract testing without sacrificing the testing pyramid for end-to-end integration tests. And we’ll do it all within the context of functional/reactive programming.",
+    "summaryAsHtml" : "Join us for an exploration of testing a reactive Spring Boot 2.x application. Test driven development gives us the confidence necessary to improve our code faster, safely. But how do you test components and services, as well as integrations across distributed systems, while maintaining fast feedback loops, and how do you do all of this within the context of reactive Java? In this talk, we'll look at how to test imperative components, reactive data flows, and mocks. We’ll examine how to take advantage of test slices, and how to test web applications. We'll look at how to ensure that API producers and consumers work well together using consumer driven contract testing without sacrificing the testing pyramid for end-to-end integration tests. And we’ll do it all within the context of functional/reactive programming.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "reactive"
+    }, {
+      "value" : "testing"
+    }, {
+      "value" : "tdd"
+    }, {
+      "value" : "cloud"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "2e93061543cde6bde464afd77e37198f67675a4f",
+        "rel" : "2e93061543cde6bde464afd77e37198f67675a4f",
+        "title" : "Mario V Gray"
+      },
+      "name" : "Mario V Gray"
+    } ]
+  }
+}, {
+  "slotId" : "5c44693a9034ae38180b14b2_a_room_1_Monday_10:00_11:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Monday",
+  "fromTime" : "10:00",
+  "fromTimeMillis" : 1558944000000,
+  "toTime" : "11:00",
+  "toTimeMillis" : 1558947600000,
+  "talk" : {
+    "id" : "5c44693a9034ae38180b14b2",
+    "title" : "IoT powered by Microprofile – Microservices in practice",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "talk",
+    "summary" : "We are going to show you what happens when the management lets enterprise Java developers and architects decide how we can control the IoT devices in our new office. While it's easy to figure out why Microprofile is cool, it's harder to see how to get in into your project.\n\nBy the end of this talk, you will be introduced into the patterns and software in the enterprise world of Java explaining how to build a build a secure, stable, modular, and integrated system on an example of a completely over-engineered IoT solution to control the lights and plant's well-being in the new office.\n\nFear not if your system is more complex than controlling light bulbs and plants! This talk will show you how easily you can design a good production-ready Java full-stack system based on the Enterprise stack with Microprofile combined with good continuous deployment infrastructure patterns.\n\nThere be code, demos, and (buzzword) dragons.\n",
+    "summaryAsHtml" : "We are going to show you what happens when the management lets enterprise Java developers and architects decide how we can control the IoT devices in our new office. While it's easy to figure out why Microprofile is cool, it's harder to see how to get in into your project.\n\nBy the end of this talk, you will be introduced into the patterns and software in the enterprise world of Java explaining how to build a build a secure, stable, modular, and integrated system on an example of a completely over-engineered IoT solution to control the lights and plant's well-being in the new office.\n\nFear not if your system is more complex than controlling light bulbs and plants! This talk will show you how easily you can design a good production-ready Java full-stack system based on the Enterprise stack with Microprofile combined with good continuous deployment infrastructure patterns.\n\nThere be code, demos, and (buzzword) dragons.\n",
+    "tags" : [ {
+      "value" : "MicroProfile"
+    }, {
+      "value" : "Java"
+    }, {
+      "value" : "Enterprise Java"
+    }, {
+      "value" : "Microservices"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "e4dbc8f86240f1f78408c1e967137aa5d8824024",
+        "rel" : "e4dbc8f86240f1f78408c1e967137aa5d8824024",
+        "title" : "Mads Opheim"
+      },
+      "name" : "Mads Opheim"
+    }, {
+      "link" : {
+        "href" : "ce11badd5e660b5bf2b2025e167a91c302c937d5",
+        "rel" : "ce11badd5e660b5bf2b2025e167a91c302c937d5",
+        "title" : "Rustam Mehmandarov"
+      },
+      "name" : "Rustam Mehmandarov"
+    } ]
+  }
+}, {
+  "slotId" : "5c196dd738da165f64820b29_a_room_4_Monday_10:00_11:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Monday",
+  "fromTime" : "10:00",
+  "fromTimeMillis" : 1558944000000,
+  "toTime" : "11:00",
+  "toTimeMillis" : 1558947600000,
+  "talk" : {
+    "id" : "5c196dd738da165f64820b29",
+    "title" : "Reactive Spring",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Microservices and big-data increasingly confront us with the limitations of traditional input/output. In traditional IO, work that is IO-bound dominates threads. This wouldn't be such a big deal if we could add more threads cheaply, but threads are expensive on the JVM, and most other platforms. Even if threads were cheap and infinitely scalable, we'd still be confronted with the faulty nature of networks. Things break, and they often do so in subtle, but non-exceptional ways. Traditional approaches to integration bury the faulty nature of networks behind overly simplifying abstractions. We need something better.\n\nSpring Framework 5 is here ! It introduces the Spring developer to a growing world of support for reactive programming across the Spring portfolio, starting with a new Netty-based web runtime, component model and module called Spring WebFlux, and then continuing to Spring Data Kay, Spring Security 5.0, Spring Boot 2.0 and Spring Cloud Finchley. Sure, it sounds like a lot, but don't worry! Join me, your guide, Spring developer advocate Josh Long, and we'll explore the wacky, wonderful world of Reactive Spring together.\n\n",
+    "summaryAsHtml" : "Microservices and big-data increasingly confront us with the limitations of traditional input/output. In traditional IO, work that is IO-bound dominates threads. This wouldn't be such a big deal if we could add more threads cheaply, but threads are expensive on the JVM, and most other platforms. Even if threads were cheap and infinitely scalable, we'd still be confronted with the faulty nature of networks. Things break, and they often do so in subtle, but non-exceptional ways. Traditional approaches to integration bury the faulty nature of networks behind overly simplifying abstractions. We need something better.\n\nSpring Framework 5 is here ! It introduces the Spring developer to a growing world of support for reactive programming across the Spring portfolio, starting with a new Netty-based web runtime, component model and module called Spring WebFlux, and then continuing to Spring Data Kay, Spring Security 5.0, Spring Boot 2.0 and Spring Cloud Finchley. Sure, it sounds like a lot, but don't worry! Join me, your guide, Spring developer advocate Josh Long, and we'll explore the wacky, wonderful world of Reactive Spring together.\n\n",
+    "tags" : [ {
+      "value" : "java"
+    }, {
+      "value" : "reactive"
+    }, {
+      "value" : "spring"
+    }, {
+      "value" : "mongodb"
+    }, {
+      "value" : "sql"
+    }, {
+      "value" : "postgresql"
+    }, {
+      "value" : "rsocket"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "3803f8e428feb905178afd9025cfc53fb47a8abc",
+        "rel" : "3803f8e428feb905178afd9025cfc53fb47a8abc",
+        "title" : "Josh Long"
+      },
+      "name" : "Josh Long"
+    } ]
+  }
+}, {
+  "slotId" : "5c24ec6b38da163bd315a05f_a_room_3_Monday_10:00_11:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Monday",
+  "fromTime" : "10:00",
+  "fromTimeMillis" : 1558944000000,
+  "toTime" : "11:00",
+  "toTimeMillis" : 1558947600000,
+  "talk" : {
+    "id" : "5c24ec6b38da163bd315a05f",
+    "title" : "Interaction Protocols: It's all about good manners",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Distributed and concurrent systems can be considered a social group that collaborate to achieve collective goals. In order to collaborate a system of rules must be applied that affords good hygiene, fault tolerance, and effective communication to coordinate, share knowledge, and provide feedback in a polite trusted manner. These rules form a number of protocols which enable the group to act as a system which is greater than the sum of the individual components.\n\nIn this talk we will explore the history of protocols and their application when building distributed systems.",
+    "summaryAsHtml" : "Distributed and concurrent systems can be considered a social group that collaborate to achieve collective goals. In order to collaborate a system of rules must be applied that affords good hygiene, fault tolerance, and effective communication to coordinate, share knowledge, and provide feedback in a polite trusted manner. These rules form a number of protocols which enable the group to act as a system which is greater than the sum of the individual components.\n\nIn this talk we will explore the history of protocols and their application when building distributed systems.",
+    "tags" : [ {
+      "value" : "Design"
+    }, {
+      "value" : "Distributed Systems"
+    }, {
+      "value" : "Concurrency"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "8f62b44cd97764484d759b364f5bf32e558a5edd",
+        "rel" : "8f62b44cd97764484d759b364f5bf32e558a5edd",
+        "title" : "Martin Thompson"
+      },
+      "name" : "Martin Thompson"
+    } ]
+  }
+}, {
+  "slotId" : "5c19647038da16778cb20fc5_a_room_4_Monday_12:00_13:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Monday",
+  "fromTime" : "12:00",
+  "fromTimeMillis" : 1558951200000,
+  "toTime" : "13:00",
+  "toTimeMillis" : 1558954800000,
+  "talk" : {
+    "id" : "5c19647038da16778cb20fc5",
+    "title" : "OOP v̶s̶ and FP ",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Object Oriented Programming dominated the software development landscape in the last decade of XX century and in the first of XXI. In more recent years, even as a consequence of the advent of multicore CPUs, Functional Programming and its principles started attracting more interest, becoming at least equally relevant in our industry. The biggest mistake made by programmers nowadays is considering OOP and FP as two mutually exclusive paradigms. This misconception is also the product of a misunderstanding about what OOP actually means and its founding principles. The biggest pros of OOP are polymorphism and encapsulation while FP strengths are immutabilty and its declarative style, but these features are orthogonal and there's no reason why they cannot coexist in the same program. The final purpose of this talk is twofold: debunking the misconceptions on OOP and showing that OOP and FP are actually complementary techniques that can happily coexist in the same codebase. It is the duty of experienced developers to fill their toolbox with both OOP and FP tools and to know from time to time how to choose and employ the tool that is the best fit for the problem at hand.",
+    "summaryAsHtml" : "Object Oriented Programming dominated the software development landscape in the last decade of XX century and in the first of XXI. In more recent years, even as a consequence of the advent of multicore CPUs, Functional Programming and its principles started attracting more interest, becoming at least equally relevant in our industry. The biggest mistake made by programmers nowadays is considering OOP and FP as two mutually exclusive paradigms. This misconception is also the product of a misunderstanding about what OOP actually means and its founding principles. The biggest pros of OOP are polymorphism and encapsulation while FP strengths are immutabilty and its declarative style, but these features are orthogonal and there's no reason why they cannot coexist in the same program. The final purpose of this talk is twofold: debunking the misconceptions on OOP and showing that OOP and FP are actually complementary techniques that can happily coexist in the same codebase. It is the duty of experienced developers to fill their toolbox with both OOP and FP tools and to know from time to time how to choose and employ the tool that is the best fit for the problem at hand.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "Functional Programming"
+    }, {
+      "value" : "Object Oriented Programming"
+    }, {
+      "value" : "Design pattern"
+    }, {
+      "value" : "Best practices"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "16fd0826550372e61a8c17d3acdf30d0871de728",
+        "rel" : "16fd0826550372e61a8c17d3acdf30d0871de728",
+        "title" : "Mario Fusco"
+      },
+      "name" : "Mario Fusco"
+    } ]
+  }
+}, {
+  "slotId" : "5c36683738da16698cf41adf_a_room_3_Monday_12:00_13:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Monday",
+  "fromTime" : "12:00",
+  "fromTimeMillis" : 1558951200000,
+  "toTime" : "13:00",
+  "toTimeMillis" : 1558954800000,
+  "talk" : {
+    "id" : "5c36683738da16698cf41adf",
+    "title" : "Extending Spring Boot for Enterprise",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "Spring Boot has been an incredibly successful at reducing the time and complexity of spinning up new projects. However enterprise demands often cause Spring Boot projects to become bloated, out of date, and have inconsistent implementations, leading to them being difficult to maintain both for the teams responsible for a project and from an enterprise level of ensuring projects properly implement features like security, logging, database connectivity, and other common concerns.  \n\nIn this presentation we will look at some of the underlying philosophies of Spring Boot and see at how to apply them to the enterprise. Specific topics include creating customs starter libraries, BOMs, and easing project initialization steps all with the goal of reducing developer toil and frustration while ensuring consistent behavior across large enterprises but not blocking experimentation. If your organization has been struggling with bloated poms, projects full of dead code, and long pipelines from project conception to deployment to production this is a presentation you will definitely want to check out.  \n",
+    "summaryAsHtml" : "Spring Boot has been an incredibly successful at reducing the time and complexity of spinning up new projects. However enterprise demands often cause Spring Boot projects to become bloated, out of date, and have inconsistent implementations, leading to them being difficult to maintain both for the teams responsible for a project and from an enterprise level of ensuring projects properly implement features like security, logging, database connectivity, and other common concerns.  \n\nIn this presentation we will look at some of the underlying philosophies of Spring Boot and see at how to apply them to the enterprise. Specific topics include creating customs starter libraries, BOMs, and easing project initialization steps all with the goal of reducing developer toil and frustration while ensuring consistent behavior across large enterprises but not blocking experimentation. If your organization has been struggling with bloated poms, projects full of dead code, and long pipelines from project conception to deployment to production this is a presentation you will definitely want to check out.  \n",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "Cloud Native"
+    }, {
+      "value" : "Spring Boot"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "459fc7466dfa9163817d35cc884ca96e154c2420",
+        "rel" : "459fc7466dfa9163817d35cc884ca96e154c2420",
+        "title" : "Billy Korando"
+      },
+      "name" : "Billy Korando"
+    } ]
+  }
+}, {
+  "slotId" : "5c3e5e8838da16698cf41b2a_a_room_2_Monday_11:00_12:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Monday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1558947600000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1558951200000,
+  "talk" : {
+    "id" : "5c3e5e8838da16698cf41b2a",
+    "title" : "Amazon Corretto",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the OpenJDK. Corretto comes with long-term support that will include performance enhancements and security fixes. Amazon runs Corretto internally on thousands of production services and Corretto is certified as compatible with the Java SE standard. With Corretto, you can develop and run Java applications on popular operating systems, including Amazon Linux 2, Windows, and macOS. This talk will explain on why Amazon Corretto was created. Upstream compatibility to OpenJDK is a core tenet of Corretto. Attendees will learn how an upstream OpenJDK build is published as Corretto. You’ll learn how to get started with Corretto and collaborate in open source.",
+    "summaryAsHtml" : "Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the OpenJDK. Corretto comes with long-term support that will include performance enhancements and security fixes. Amazon runs Corretto internally on thousands of production services and Corretto is certified as compatible with the Java SE standard. With Corretto, you can develop and run Java applications on popular operating systems, including Amazon Linux 2, Windows, and macOS. This talk will explain on why Amazon Corretto was created. Upstream compatibility to OpenJDK is a core tenet of Corretto. Attendees will learn how an upstream OpenJDK build is published as Corretto. You’ll learn how to get started with Corretto and collaborate in open source.",
+    "tags" : [ {
+      "value" : "java"
+    }, {
+      "value" : "open source"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "de5b08c6aec163137cfb4a1ee530799b48812be8",
+        "rel" : "de5b08c6aec163137cfb4a1ee530799b48812be8",
+        "title" : "Arun Gupta"
+      },
+      "name" : "Arun Gupta"
+    } ]
+  }
+}, {
+  "slotId" : "5c48ec969034ae38180b14df_a_room_1_Tuesday_10:00_11:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Tuesday",
+  "fromTime" : "10:00",
+  "fromTimeMillis" : 1559030400000,
+  "toTime" : "11:00",
+  "toTimeMillis" : 1559034000000,
+  "talk" : {
+    "id" : "5c48ec969034ae38180b14df",
+    "title" : "Zero Downtime Migrations in Istio era",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "You joined the DevOps movement and want to release software even faster and safer. You started reading about Advanced deployment techniques like Blue-Green Deployment, Canary Releases or Dark Shadow Technique. But how do you implement them without disrupting your users in production? With Zero Downtime! This is easy with your code, but what about ephemeral and persistent states? Most of the examples out there does not tackle this scenario (which is the most common in real systems). Come to this session and you’ll learn in a practical way how you can achieve zero downtime deployments applying advanced deployment techniques for maintaining the ephemeral and persistent state with Istio",
+    "summaryAsHtml" : "You joined the DevOps movement and want to release software even faster and safer. You started reading about Advanced deployment techniques like Blue-Green Deployment, Canary Releases or Dark Shadow Technique. But how do you implement them without disrupting your users in production? With Zero Downtime! This is easy with your code, but what about ephemeral and persistent states? Most of the examples out there does not tackle this scenario (which is the most common in real systems). Come to this session and you’ll learn in a practical way how you can achieve zero downtime deployments applying advanced deployment techniques for maintaining the ephemeral and persistent state with Istio",
+    "tags" : [ {
+      "value" : "devops"
+    }, {
+      "value" : "istio"
+    }, {
+      "value" : "microservices"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "1cf43210c8515585e52e4d2f6f2e5e0f582049d8",
+        "rel" : "1cf43210c8515585e52e4d2f6f2e5e0f582049d8",
+        "title" : "Alex Soto"
+      },
+      "name" : "Alex Soto"
+    } ]
+  }
+}, {
+  "slotId" : "5c19651d38da16778cb20fc6_a_room_4_Wednesday_09:00_12:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Wednesday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1559113200000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1559124000000,
+  "talk" : {
+    "id" : "5c19651d38da16778cb20fc6",
+    "title" : "Poker Hands - Refactoring into Chain of Responsibility",
+    "talkType" : "workshop",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Poker Hands are are put into sequential order and the player who holds the highest one wins. Let’s make fun of it then and perform some refactorings of code that identifies what poker figure given player holds. We will transform a set of nested if-else statements into a nice chain of responsibility classes (Straight Flush, Four of a Kind, Full House, ...) . This way the chain of classes put into sequential order will figure out the score given player holds. Proxy design patterns will come into the picture as well.\n\nAll I can promise during this refactoring workshop is definitely no bluffing - just pure focus on code transformations. BTW : Did you know that real poker players are bluffing very rarely…? \n\nPrerequisite : become acquainted with poker rules if you haven’t played it so far, as business perspective and understanding existing code is the initial step for any refactoring. And don’t forget to install IntelliJ IDE - our master refactoring tool!",
+    "summaryAsHtml" : "Poker Hands are are put into sequential order and the player who holds the highest one wins. Let’s make fun of it then and perform some refactorings of code that identifies what poker figure given player holds. We will transform a set of nested if-else statements into a nice chain of responsibility classes (Straight Flush, Four of a Kind, Full House, ...) . This way the chain of classes put into sequential order will figure out the score given player holds. Proxy design patterns will come into the picture as well.\n\nAll I can promise during this refactoring workshop is definitely no bluffing - just pure focus on code transformations. BTW : Did you know that real poker players are bluffing very rarely…? \n\nPrerequisite : become acquainted with poker rules if you haven’t played it so far, as business perspective and understanding existing code is the initial step for any refactoring. And don’t forget to install IntelliJ IDE - our master refactoring tool!",
+    "tags" : [ {
+      "value" : "Refactoring"
+    }, {
+      "value" : "Design Patterns"
+    }, {
+      "value" : "Java"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "34e64a4d88094a0c4231d49cc0305d61d7b854ee",
+        "rel" : "34e64a4d88094a0c4231d49cc0305d61d7b854ee",
+        "title" : "Wlodek Krakowski"
+      },
+      "name" : "Wlodek Krakowski"
+    } ]
+  }
+}, {
+  "slotId" : "5c5225d49034ae38180b151d_a_room_1_Monday_12:00_13:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Monday",
+  "fromTime" : "12:00",
+  "fromTimeMillis" : 1558951200000,
+  "toTime" : "13:00",
+  "toTimeMillis" : 1558954800000,
+  "talk" : {
+    "id" : "5c5225d49034ae38180b151d",
+    "title" : "Real-world HTTP performance benchmarking, lessons learned",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "The TechEmpower Framework Benchmark is a public comparison of more than 200 web frameworks in different languages. The competition is fierce and everyone wants to be ranked in the top!\n\n    Eclipse Vert.x is a popular reactive stack for the JVM, designed for highly scalable applications and has taken part in this competition for several years.\n\n    Performance benchmarks are often used for comparing HTTP server or web frameworks and often used by people to choose between implementations. We will look at what these benchmarks means and what they actually measure.\n\n    The presentation will explain the secret sauce powering Vert.x performance that has a direct impact on this benchmark, from Java just-in-time compiler to networking optimizations.",
+    "summaryAsHtml" : "The TechEmpower Framework Benchmark is a public comparison of more than 200 web frameworks in different languages. The competition is fierce and everyone wants to be ranked in the top!\n\n    Eclipse Vert.x is a popular reactive stack for the JVM, designed for highly scalable applications and has taken part in this competition for several years.\n\n    Performance benchmarks are often used for comparing HTTP server or web frameworks and often used by people to choose between implementations. We will look at what these benchmarks means and what they actually measure.\n\n    The presentation will explain the secret sauce powering Vert.x performance that has a direct impact on this benchmark, from Java just-in-time compiler to networking optimizations.",
+    "tags" : [ {
+      "value" : "performance"
+    }, {
+      "value" : "HTTP"
+    }, {
+      "value" : "vert.x"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "0ad9d5343d1ee682de4fd65c3df75aac55029fac",
+        "rel" : "0ad9d5343d1ee682de4fd65c3df75aac55029fac",
+        "title" : "Julien Viet"
+      },
+      "name" : "Julien Viet"
+    } ]
+  }
+}, {
+  "slotId" : "5c48ec849034ae38180b14de_a_room_2_Monday_10:00_11:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Monday",
+  "fromTime" : "10:00",
+  "fromTimeMillis" : 1558944000000,
+  "toTime" : "11:00",
+  "toTimeMillis" : 1558947600000,
+  "talk" : {
+    "id" : "5c48ec849034ae38180b14de",
+    "title" : " Type Inference: Friend or Foe",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Java 10 has local variable type inference, but type inference is not really new in Java. Is type inference good or it is it bad. Are there challenges to use them? When is a good time to use type inference? What are some of the limitations to using it. This presentation includes the details of Java 10 type inference, but certainly will not limit to it. We will step back and discuss type inference from the programmer point of view and work thought the benefits and caveats. At the end of this presentation you will be able to decide when to use it and where to avoid it.",
+    "summaryAsHtml" : "Java 10 has local variable type inference, but type inference is not really new in Java. Is type inference good or it is it bad. Are there challenges to use them? When is a good time to use type inference? What are some of the limitations to using it. This presentation includes the details of Java 10 type inference, but certainly will not limit to it. We will step back and discuss type inference from the programmer point of view and work thought the benefits and caveats. At the end of this presentation you will be able to decide when to use it and where to avoid it.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "type inference"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "d2c05e60af702984122c68c8a46fc574fba6f726",
+        "rel" : "d2c05e60af702984122c68c8a46fc574fba6f726",
+        "title" : "Venkat Subramaniam"
+      },
+      "name" : "Venkat Subramaniam"
+    } ]
+  }
+}, {
+  "slotId" : "5c48ed639034ae38180b14e1_a_room_2_Monday_12:00_13:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Monday",
+  "fromTime" : "12:00",
+  "fromTimeMillis" : 1558951200000,
+  "toTime" : "13:00",
+  "toTimeMillis" : 1558954800000,
+  "talk" : {
+    "id" : "5c48ed639034ae38180b14e1",
+    "title" : "Java n + 1: What's in store for Java 12 and beyond",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "The semi-annual Java release cycle means that we get new Java features quicker. Let's get you up to speed on the latest features! Java 12 is released on March 12, 2019. \n\nJava 12 adds some nice languages features and API changes like switch expressions, string literals, and a new garbage collector algorithm. \n\nIn this talk, you will get a quick recap of features that were introduced after Java 8,  see a demo of the new features in Java 12,  and examine what is in the pipeline for future Java releases. Furthermore, we will look at the changed Java ecosystem and support model, and explore alternative Java implementations like Amazon's Corretto.",
+    "summaryAsHtml" : "The semi-annual Java release cycle means that we get new Java features quicker. Let's get you up to speed on the latest features! Java 12 is released on March 12, 2019. \n\nJava 12 adds some nice languages features and API changes like switch expressions, string literals, and a new garbage collector algorithm. \n\nIn this talk, you will get a quick recap of features that were introduced after Java 8,  see a demo of the new features in Java 12,  and examine what is in the pipeline for future Java releases. Furthermore, we will look at the changed Java ecosystem and support model, and explore alternative Java implementations like Amazon's Corretto.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "JDK12"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "40afe10a3ea9ec161d15ade201a0101fa8f635f4",
+        "rel" : "40afe10a3ea9ec161d15ade201a0101fa8f635f4",
+        "title" : "Michel Schudel"
+      },
+      "name" : "Michel Schudel"
+    } ]
+  }
+}, {
+  "slotId" : "5c52261c9034ae38180b1520_a_room_2_Tuesday_11:00_12:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Tuesday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1559034000000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1559037600000,
+  "talk" : {
+    "id" : "5c52261c9034ae38180b1520",
+    "title" : "Authentication/Authorization Starters Battle",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "When you start a brand new app or service, you need to think about how you will manage authentication and permissions. But if you are like everyone else, you genuinely do not want to actually think about this. If someone else could do that for you, life would be great. And this has actually happened, you have the choice between several boilerplate projects or authentication/authorization libraries. In fact, you have a lot of options. Which one to choose? Let's put them to the test!\n\nIt's time for battle! In this talk we will implement some of the most common starters to showcase different types of authentication and permission management. At the end of this talk, you will have a good overview of the common existing solutions and their benefits.\n",
+    "summaryAsHtml" : "When you start a brand new app or service, you need to think about how you will manage authentication and permissions. But if you are like everyone else, you genuinely do not want to actually think about this. If someone else could do that for you, life would be great. And this has actually happened, you have the choice between several boilerplate projects or authentication/authorization libraries. In fact, you have a lot of options. Which one to choose? Let's put them to the test!\n\nIt's time for battle! In this talk we will implement some of the most common starters to showcase different types of authentication and permission management. At the end of this talk, you will have a good overview of the common existing solutions and their benefits.\n",
+    "tags" : [ {
+      "value" : "authorization"
+    }, {
+      "value" : "authentication"
+    }, {
+      "value" : "security"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "1d54c30358e79434b07f96ddcb7dc19325134eeb",
+        "rel" : "1d54c30358e79434b07f96ddcb7dc19325134eeb",
+        "title" : "Valeriane Venance"
+      },
+      "name" : "Valeriane Venance"
+    } ]
+  }
+}, {
+  "slotId" : "5c196e1138da165f64820b2b_a_room_2_Tuesday_10:00_11:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Tuesday",
+  "fromTime" : "10:00",
+  "fromTimeMillis" : 1559030400000,
+  "toTime" : "11:00",
+  "toTimeMillis" : 1559034000000,
+  "talk" : {
+    "id" : "5c196e1138da165f64820b2b",
+    "title" : "Fantastic Frameworks and How to Avoid Them",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "As high-level programming languages users, we love bold promises of getting all our problems solved just by adding a few annotations. \n\nThose few annotations come often bundled with other magical techniques like classpath scanning or dynamic proxies… and creep into our domain models contributing to long-term maintainability issues... and/or consultancy and premium enterprise support costs.\n\nIn this session, we’ll have a look at the cons of adopting invasive frameworks and how we can minimize the problems they cause.",
+    "summaryAsHtml" : "As high-level programming languages users, we love bold promises of getting all our problems solved just by adding a few annotations. \n\nThose few annotations come often bundled with other magical techniques like classpath scanning or dynamic proxies… and creep into our domain models contributing to long-term maintainability issues... and/or consultancy and premium enterprise support costs.\n\nIn this session, we’ll have a look at the cons of adopting invasive frameworks and how we can minimize the problems they cause.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "Architecture"
+    }, {
+      "value" : "Methodology"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "dcf4d5f83bc2dab51fb90922055352668da14a18",
+        "rel" : "dcf4d5f83bc2dab51fb90922055352668da14a18",
+        "title" : "Grzegorz Piwowarek"
+      },
+      "name" : "Grzegorz Piwowarek"
+    } ]
+  }
+}, {
+  "slotId" : "5c196e0238da165f64820b2a_a_room_3_Wednesday_14:00_16:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Wednesday",
+  "fromTime" : "14:00",
+  "fromTimeMillis" : 1559131200000,
+  "toTime" : "16:00",
+  "toTimeMillis" : 1559138400000,
+  "talk" : {
+    "id" : "5c196e0238da165f64820b2a",
+    "title" : "The Istio Workshop",
+    "talkType" : "workshop",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "The first generation of microservices was primarily shaped by Netflix OSS and leveraged by numerous Spring Cloud annotations all throughout your business logic. The next generation of microservices will leverage sidecars and a service mesh. In this session, we will give you a taste of Envoy and Istio, two open source projects that will change the way you write distributed Java applications on Kubernetes. Check out how we use Envoy and Istio to deal with traffic shaping, network fault-injection, A/B testing, dark launches, mirroring, and much more.",
+    "summaryAsHtml" : "The first generation of microservices was primarily shaped by Netflix OSS and leveraged by numerous Spring Cloud annotations all throughout your business logic. The next generation of microservices will leverage sidecars and a service mesh. In this session, we will give you a taste of Envoy and Istio, two open source projects that will change the way you write distributed Java applications on Kubernetes. Check out how we use Envoy and Istio to deal with traffic shaping, network fault-injection, A/B testing, dark launches, mirroring, and much more.",
+    "tags" : [ {
+      "value" : "microservices"
+    }, {
+      "value" : "java"
+    }, {
+      "value" : "cloud native"
+    }, {
+      "value" : "service mesh"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "c5224c12852709f7ae60fa80d93f46fd2d64a5c4",
+        "rel" : "c5224c12852709f7ae60fa80d93f46fd2d64a5c4",
+        "title" : "Rafael Benevides"
+      },
+      "name" : "Rafael Benevides"
+    } ]
+  }
+}, {
+  "slotId" : "5c196e3638da165f64820b2d_a_room_4_Monday_09:00_10:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Monday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1558940400000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1558944000000,
+  "talk" : {
+    "id" : "5c196e3638da165f64820b2d",
+    "title" : "Kotlin & Implications in an IoT project ",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "Develop IoT solutions with Kotlin is possible thanks to the incorporation to Kotlin as a first class programming language to Android and the becoming of Android Things, an optimized version of Android for embedded devices. This talk is looking for explore the aspects around IoT projects, Hardware, Security, Server Side, Data Analysis from the hand of Android Things and Kotlin.\n\nThe Internet of Things is a technology that has been echoing for some time. Arriving to generate interesting and attractive solutions. It usually happens that those who develop this type of solutions know about the Hardware, or they only have knowledge of the Software side. This talk seeks to explore all those aspects around IoT in the hand of a real project for monitoring fishbowls (something that you can implement at home). \n\nIn the hardware side, we will use sensors and different technologies for handle the information obtained from these (Raspberry PI, Arduino, etc). Since we want to show how to use Kotlin for develop IoT solutions, we will use Android Things with Kotlin and Raspberry PI. \n\nThe server side, using Serverless or IoT cloud solutions, options to analyze our information. Finally, is important take some considerations over the security aspects in IoT projects, although there are not yet 100% solid solutions, there are already efforts to solve this.",
+    "summaryAsHtml" : "Develop IoT solutions with Kotlin is possible thanks to the incorporation to Kotlin as a first class programming language to Android and the becoming of Android Things, an optimized version of Android for embedded devices. This talk is looking for explore the aspects around IoT projects, Hardware, Security, Server Side, Data Analysis from the hand of Android Things and Kotlin.\n\nThe Internet of Things is a technology that has been echoing for some time. Arriving to generate interesting and attractive solutions. It usually happens that those who develop this type of solutions know about the Hardware, or they only have knowledge of the Software side. This talk seeks to explore all those aspects around IoT in the hand of a real project for monitoring fishbowls (something that you can implement at home). \n\nIn the hardware side, we will use sensors and different technologies for handle the information obtained from these (Raspberry PI, Arduino, etc). Since we want to show how to use Kotlin for develop IoT solutions, we will use Android Things with Kotlin and Raspberry PI. \n\nThe server side, using Serverless or IoT cloud solutions, options to analyze our information. Finally, is important take some considerations over the security aspects in IoT projects, although there are not yet 100% solid solutions, there are already efforts to solve this.",
+    "tags" : [ {
+      "value" : "JVM langs (Kotlin)"
+    }, {
+      "value" : "IoT"
+    }, {
+      "value" : "Android"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "d43c4a28c6222750fcef9b5b50013ea8ed897d19",
+        "rel" : "d43c4a28c6222750fcef9b5b50013ea8ed897d19",
+        "title" : "Mercedes Wyss"
+      },
+      "name" : "Mercedes Wyss"
+    } ]
+  }
+}, {
+  "slotId" : "5c48ed3b9034ae38180b14e0_a_room_4_Wednesday_14:00_16:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Wednesday",
+  "fromTime" : "14:00",
+  "fromTimeMillis" : 1559131200000,
+  "toTime" : "16:00",
+  "toTimeMillis" : 1559138400000,
+  "talk" : {
+    "id" : "5c48ed3b9034ae38180b14e0",
+    "title" : "Retrospective Sailing Workshop",
+    "talkType" : "workshop",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "Hands on workshop for teams to help implement and improve Retrospectives within teams. Agile retrospectives are a great practice for helping teams to reflect on what’s going well and what could be better, and identify opportunities for improvement and change.  Retrospectives within teams helps to encourage self organisation, management and improvement. Introduction to Retrospectives: Formats for running Retrospectives, Practical exercises – Retrospective Sailing Game, Facilitating a Retrospective, Outcomes and Measures using Retrospectives. Retrospective Sailing is an agile reflection game demonstrated in this hands-on workshop. You can play as an individual in any role, as part of a development team, or with clients and customers to help understand how your journey is going. It will give you a new, fun way to run a retrospective to help to gain your bearings, identify what’s putting the wind in your sails, the anchors holding you back, and discover hidden treasure. Then you’ll plot your course and map a way forward that raises those anchors and catches the tide and a fair wind. You will be introduced to the game and try it out. There will be case examples and tips for facilitating the game too. Join us for some constructive fun, practical outcomes, and a useful tool to take back to the office. Helping teams embed continuous reflection and improvement into their work. Retrospective Sailing helps teams to reflect and map their way forward easily, in a fun, tactile and visual way. Review what's going well, what could go better, and ensure you are responding regularly to the changing horizon.",
+    "summaryAsHtml" : "Hands on workshop for teams to help implement and improve Retrospectives within teams. Agile retrospectives are a great practice for helping teams to reflect on what’s going well and what could be better, and identify opportunities for improvement and change.  Retrospectives within teams helps to encourage self organisation, management and improvement. Introduction to Retrospectives: Formats for running Retrospectives, Practical exercises – Retrospective Sailing Game, Facilitating a Retrospective, Outcomes and Measures using Retrospectives. Retrospective Sailing is an agile reflection game demonstrated in this hands-on workshop. You can play as an individual in any role, as part of a development team, or with clients and customers to help understand how your journey is going. It will give you a new, fun way to run a retrospective to help to gain your bearings, identify what’s putting the wind in your sails, the anchors holding you back, and discover hidden treasure. Then you’ll plot your course and map a way forward that raises those anchors and catches the tide and a fair wind. You will be introduced to the game and try it out. There will be case examples and tips for facilitating the game too. Join us for some constructive fun, practical outcomes, and a useful tool to take back to the office. Helping teams embed continuous reflection and improvement into their work. Retrospective Sailing helps teams to reflect and map their way forward easily, in a fun, tactile and visual way. Review what's going well, what could go better, and ensure you are responding regularly to the changing horizon.",
+    "tags" : [ {
+      "value" : "Agile"
+    }, {
+      "value" : "Retrospectives"
+    }, {
+      "value" : "Teams"
+    }, {
+      "value" : "improvement"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "8ba341ede35371519196bc6a3c2cd11e4789c34a",
+        "rel" : "8ba341ede35371519196bc6a3c2cd11e4789c34a",
+        "title" : "Belinda Waldock"
+      },
+      "name" : "Belinda Waldock"
+    } ]
+  }
+}, {
+  "slotId" : "5c196e2c38da165f64820b2c_a_room_1_Monday_11:00_12:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Monday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1558947600000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1558951200000,
+  "talk" : {
+    "id" : "5c196e2c38da165f64820b2c",
+    "title" : "Bulletproof Java Enterprise Applications for The Hard Production Life",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "It’s one thing to develop Java Enterprise applications, to execute, and validate them in test environments. Running the application in production, however, is a whole other story. Production life is harsh, unforgivable and the ultimate verification whether your application is able to add value to its users. Besides knowing the Java Enterprise APIs, developers therefore also need to know how to meet production requirements.\n\nThis session shows which non-functional requirements we enterprise developers need to be aware of to build stable and resilient applications. We will see different resiliency approaches, such as circuit breakers, bulkheads, or backpressure, in action. We will implement these concepts using the Java Enterprise API, MicroProfile, and certain Java EE extensions. Furthermore, we will see, how especially service meshes enable us to add resiliency to multiple microservices in a transparent, redundancy-free fashion.\n\nAdding telemetry to our applications is crucial to gather insights about the application under production load. We will see how to enhance our microservices with concerns such as monitoring, tracing, or logging in a minimalistic way.\n\nAll of the time will be spent live-demoing Java Enterprise applications that are deployed to an Istio cluster.",
+    "summaryAsHtml" : "It’s one thing to develop Java Enterprise applications, to execute, and validate them in test environments. Running the application in production, however, is a whole other story. Production life is harsh, unforgivable and the ultimate verification whether your application is able to add value to its users. Besides knowing the Java Enterprise APIs, developers therefore also need to know how to meet production requirements.\n\nThis session shows which non-functional requirements we enterprise developers need to be aware of to build stable and resilient applications. We will see different resiliency approaches, such as circuit breakers, bulkheads, or backpressure, in action. We will implement these concepts using the Java Enterprise API, MicroProfile, and certain Java EE extensions. Furthermore, we will see, how especially service meshes enable us to add resiliency to multiple microservices in a transparent, redundancy-free fashion.\n\nAdding telemetry to our applications is crucial to gather insights about the application under production load. We will see how to enhance our microservices with concerns such as monitoring, tracing, or logging in a minimalistic way.\n\nAll of the time will be spent live-demoing Java Enterprise applications that are deployed to an Istio cluster.",
+    "tags" : [ {
+      "value" : "Enterprise Java"
+    }, {
+      "value" : "Production Environments"
+    }, {
+      "value" : "Cloud Native Java"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "1799a6d25dbe9b65e5a25078815b20fc9af956f4",
+        "rel" : "1799a6d25dbe9b65e5a25078815b20fc9af956f4",
+        "title" : "Sebastian Daschner"
+      },
+      "name" : "Sebastian Daschner"
+    } ]
+  }
+}, {
+  "slotId" : "5c3b3e4538da16698cf41b0a_a_room_3_Tuesday_11:00_12:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Tuesday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1559034000000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1559037600000,
+  "talk" : {
+    "id" : "5c3b3e4538da16698cf41b0a",
+    "title" : "Live Refactoring Session: Getting rid of dirty code",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "In this live hacking, we will look at three typical starting situations for refactoring dirty code. In the first example, we will wade through rotten code: an untested, miserably long, unmaintainable method without any test coverage. In the second code example, it gets a little better. The method is still too long and barely maintainable, but it has some rudimentary test coverage. In the third code example, we look at a method that is fully covered by tests and is free of simple warnings, yet that has deeper structural problems that cannot be solved quickly. In this live coding you get practical advice on how to master a refactoring step by step - even in difficult situations.",
+    "summaryAsHtml" : "In this live hacking, we will look at three typical starting situations for refactoring dirty code. In the first example, we will wade through rotten code: an untested, miserably long, unmaintainable method without any test coverage. In the second code example, it gets a little better. The method is still too long and barely maintainable, but it has some rudimentary test coverage. In the third code example, we look at a method that is fully covered by tests and is free of simple warnings, yet that has deeper structural problems that cannot be solved quickly. In this live coding you get practical advice on how to master a refactoring step by step - even in difficult situations.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "refactoring"
+    }, {
+      "value" : "live coding"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "1910f00e3b6a8220979782a1355b8570de1beca0",
+        "rel" : "1910f00e3b6a8220979782a1355b8570de1beca0",
+        "title" : "Marcus Biel"
+      },
+      "name" : "Marcus Biel"
+    } ]
+  }
+}, {
+  "slotId" : "5c48ed809034ae38180b14e2_a_room_3_Tuesday_09:00_10:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Tuesday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1559026800000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1559030400000,
+  "talk" : {
+    "id" : "5c48ed809034ae38180b14e2",
+    "title" : "Continuous deployment to Kubernetes with the Google Container Tools",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Kubernetes has become the orchestrator of choice to deploy applications. But what about Java developer's day to day job of developing those applications? Developing with containers is not always easy nor enjoyable.\n\nGoogle has launched a set of Open-Source projects that focus on Developer Experience in a world of containers.\n\nWhether you'd like to continuously deploy to Kubernetes with Skaffold, safely build images on a cluster with Kaniko or build images much faster with Jib, come learn how to setup a great CI/CD.",
+    "summaryAsHtml" : "Kubernetes has become the orchestrator of choice to deploy applications. But what about Java developer's day to day job of developing those applications? Developing with containers is not always easy nor enjoyable.\n\nGoogle has launched a set of Open-Source projects that focus on Developer Experience in a world of containers.\n\nWhether you'd like to continuously deploy to Kubernetes with Skaffold, safely build images on a cluster with Kaniko or build images much faster with Jib, come learn how to setup a great CI/CD.",
+    "tags" : [ {
+      "value" : "kubernetes"
+    }, {
+      "value" : "containers"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "b728a02f2048c81298ca0a5a9bee9e82d7318f18",
+        "rel" : "b728a02f2048c81298ca0a5a9bee9e82d7318f18",
+        "title" : "David Gageot"
+      },
+      "name" : "David Gageot"
+    } ]
+  }
+}, {
+  "slotId" : "5c1bbfa338da160e621b7a80_a_room_4_Monday_11:00_12:00",
+  "roomId" : "a_room_4",
+  "roomName" : "Room 4",
+  "day" : "Monday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1558947600000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1558951200000,
+  "talk" : {
+    "id" : "5c1bbfa338da160e621b7a80",
+    "title" : "Micro Frontend: the microservice puzzle extended to frontend",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "beginner",
+    "summary" : "Microservices are at the top of the hype right now and perhaps you’ve already fallen for them and are replacing your good old monolith for new shiny microservices on the back-end.\n\nBut have you ever considered doing the same on the front-end? Even hype-r (or crazy-er, we’ll let you judge), have you tried mixing different JavaScript frameworks (let’s say AngularJS, Angular and React for example) in a Single Page Application?\n\nThat’s what Micro Frontend is and that’s what we’ve done at Saagie. In this talk I’d like to give you feedback on the different architectures we’ve tried, their pros and cons and help you find which one would be the best for you, just in case you’d like to opt for the dark and crazy side of front-end.",
+    "summaryAsHtml" : "Microservices are at the top of the hype right now and perhaps you’ve already fallen for them and are replacing your good old monolith for new shiny microservices on the back-end.\n\nBut have you ever considered doing the same on the front-end? Even hype-r (or crazy-er, we’ll let you judge), have you tried mixing different JavaScript frameworks (let’s say AngularJS, Angular and React for example) in a Single Page Application?\n\nThat’s what Micro Frontend is and that’s what we’ve done at Saagie. In this talk I’d like to give you feedback on the different architectures we’ve tried, their pros and cons and help you find which one would be the best for you, just in case you’d like to opt for the dark and crazy side of front-end.",
+    "tags" : [ {
+      "value" : "micro-services"
+    }, {
+      "value" : "front-end"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "df5c3701545056ca5229efe9b77ad91acf69ea02",
+        "rel" : "df5c3701545056ca5229efe9b77ad91acf69ea02",
+        "title" : "Audrey Neveu"
+      },
+      "name" : "Audrey Neveu"
+    } ]
+  }
+}, {
+  "slotId" : "5c36688538da16698cf41ae0_a_room_1_Tuesday_11:00_12:00",
+  "roomId" : "a_room_1",
+  "roomName" : "Room 1",
+  "day" : "Tuesday",
+  "fromTime" : "11:00",
+  "fromTimeMillis" : 1559034000000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1559037600000,
+  "talk" : {
+    "id" : "5c36688538da16698cf41ae0",
+    "title" : "Responsible Microservices",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "These days, you can’t swing a dry erase marker without hitting someone talking about microservices. Developers are studying Eric Evan’s prescient book Domain Driven Design. Teams are refactoring monolithic apps, looking for bounded contexts and defining a ubiquitous language. And while there have been countless articles, videos, and talks to help you convert to microservices, few have spent any appreciable time asking if a given application should be a microservice. In this talk, I will show you a set of factors you can apply to help you decide if something deserves to be a microservice or not. We’ll also look at what we need to do to maintain a healthy micro(services)biome.\n\nThere are many good reasons to use a microservices architecture. But there are no free lunches. The positives of microservices come with added complexity. Teams should happily take on that complexity...provided the application in question benefits from the upside of microservices. This talk will cut through the hype to help you make the right choice for your unique situation.",
+    "summaryAsHtml" : "These days, you can’t swing a dry erase marker without hitting someone talking about microservices. Developers are studying Eric Evan’s prescient book Domain Driven Design. Teams are refactoring monolithic apps, looking for bounded contexts and defining a ubiquitous language. And while there have been countless articles, videos, and talks to help you convert to microservices, few have spent any appreciable time asking if a given application should be a microservice. In this talk, I will show you a set of factors you can apply to help you decide if something deserves to be a microservice or not. We’ll also look at what we need to do to maintain a healthy micro(services)biome.\n\nThere are many good reasons to use a microservices architecture. But there are no free lunches. The positives of microservices come with added complexity. Teams should happily take on that complexity...provided the application in question benefits from the upside of microservices. This talk will cut through the hype to help you make the right choice for your unique situation.",
+    "tags" : [ {
+      "value" : "Architecture"
+    }, {
+      "value" : "Microservices"
+    }, {
+      "value" : "Serverless"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "ab822b577be6a2418593327d0530f2e48da634a4",
+        "rel" : "ab822b577be6a2418593327d0530f2e48da634a4",
+        "title" : "Nate Schutta"
+      },
+      "name" : "Nate Schutta"
+    } ]
+  }
+}, {
+  "slotId" : "5c36675b38da16698cf41ade_a_room_2_Monday_09:00_10:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Monday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1558940400000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1558944000000,
+  "talk" : {
+    "id" : "5c36675b38da16698cf41ade",
+    "title" : "Nowadays Architecture Trends, from Monolith to Microservices and Serverless\t",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "In this session, attendees will learn about a real-world evolution to a Distributed Architecture without being involved of a complete Microservices Madness; we will be covering tips and tricks of an experience of a evolution of a huge EAR Core Banking Application and how we evolve to a modern distributed Architecture until the evolution of use 3rd party services and Serverless; tips, tricks, pros, cons and the reasons for being involved on move forward and present sample code as FaaS and explain the pitfalls of Serverless and the security concerns on this evolution. We will be using snippets code based on JAVA, JWT, JWS, Auth0, Spring Boot and Webflux on Oracle Cloud and Spring Cloud Functions on Amazon Lambdas.",
+    "summaryAsHtml" : "In this session, attendees will learn about a real-world evolution to a Distributed Architecture without being involved of a complete Microservices Madness; we will be covering tips and tricks of an experience of a evolution of a huge EAR Core Banking Application and how we evolve to a modern distributed Architecture until the evolution of use 3rd party services and Serverless; tips, tricks, pros, cons and the reasons for being involved on move forward and present sample code as FaaS and explain the pitfalls of Serverless and the security concerns on this evolution. We will be using snippets code based on JAVA, JWT, JWS, Auth0, Spring Boot and Webflux on Oracle Cloud and Spring Cloud Functions on Amazon Lambdas.",
+    "tags" : [ {
+      "value" : "Java"
+    }, {
+      "value" : "Cloud"
+    }, {
+      "value" : "Serverless"
+    }, {
+      "value" : "Microservices"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "4f72f63b37fb9bb3781b7e7b1e3246b1364c02a2",
+        "rel" : "4f72f63b37fb9bb3781b7e7b1e3246b1364c02a2",
+        "title" : "Alberto Salazar"
+      },
+      "name" : "Alberto Salazar"
+    } ]
+  }
+}, {
+  "slotId" : "5c5b57ec38da160d5d9c8e12_a_room_3_Monday_09:00_10:00",
+  "roomId" : "a_room_3",
+  "roomName" : "Room 3",
+  "day" : "Monday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1558940400000,
+  "toTime" : "10:00",
+  "toTimeMillis" : 1558944000000,
+  "talk" : {
+    "id" : "5c5b57ec38da160d5d9c8e12",
+    "title" : "IoT Sensor Analytics with Apache Kafka, KSQL and TensorFlow",
+    "talkType" : "talk",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "Large numbers of IoT devices lead to big data and the need for further processing and analysis. Apache Kafka is a highly scalable open source streaming platform to ingest, store, process and forward high volumes of data from thousands of IoT devices. KSQL is an open-source streaming SQL engine on top of Apache Kafka to make stream processing available to everyone.\n\nThis talk shows how to leverage Kafka and KSQL in an IoT sensor analytics scenario for predictive maintenance. A live demo shows how to embed and deploy Machine Learning models - built with frameworks like TensorFlow, DeepLearning4J or H2O - into mission-critical and scalable real time applications.\n",
+    "summaryAsHtml" : "Large numbers of IoT devices lead to big data and the need for further processing and analysis. Apache Kafka is a highly scalable open source streaming platform to ingest, store, process and forward high volumes of data from thousands of IoT devices. KSQL is an open-source streaming SQL engine on top of Apache Kafka to make stream processing available to everyone.\n\nThis talk shows how to leverage Kafka and KSQL in an IoT sensor analytics scenario for predictive maintenance. A live demo shows how to embed and deploy Machine Learning models - built with frameworks like TensorFlow, DeepLearning4J or H2O - into mission-critical and scalable real time applications.\n",
+    "tags" : [ {
+      "value" : "java"
+    }, {
+      "value" : "machine learning"
+    }, {
+      "value" : "kafka"
+    }, {
+      "value" : "ksql"
+    }, {
+      "value" : "IoT"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "4933ebef38f82b62da601eb07e8362bb389cc560",
+        "rel" : "4933ebef38f82b62da601eb07e8362bb389cc560",
+        "title" : "Kai Waehner"
+      },
+      "name" : "Kai Waehner"
+    } ]
+  }
+}, {
+  "slotId" : "5c3b3b1938da16698cf41b09_a_room_2_Wednesday_09:00_12:00",
+  "roomId" : "a_room_2",
+  "roomName" : "Room 2",
+  "day" : "Wednesday",
+  "fromTime" : "09:00",
+  "fromTimeMillis" : 1559113200000,
+  "toTime" : "12:00",
+  "toTimeMillis" : 1559124000000,
+  "talk" : {
+    "id" : "5c3b3b1938da16698cf41b09",
+    "title" : "Full Stack Reactive with React and Spring WebFlux",
+    "talkType" : "workshop",
+    "track" : null,
+    "trackId" : null,
+    "lang" : "en",
+    "audienceLevel" : "middle",
+    "summary" : "You have streaming data and want to expose it as reactive streams with Spring Boot. Great! Spring WebFlux makes that pretty easy. But what about the UI? Can you stream that data to the UI and have it be reactive and constantly updating too? This session explores techniques for making your app fully reactive with Spring WebFlux and React. Mostly live coding, with plenty of time for Q & A in the midst of it all.",
+    "summaryAsHtml" : "You have streaming data and want to expose it as reactive streams with Spring Boot. Great! Spring WebFlux makes that pretty easy. But what about the UI? Can you stream that data to the UI and have it be reactive and constantly updating too? This session explores techniques for making your app fully reactive with Spring WebFlux and React. Mostly live coding, with plenty of time for Q & A in the midst of it all.",
+    "tags" : [ {
+      "value" : "React"
+    }, {
+      "value" : "Spring WebFlux"
+    }, {
+      "value" : "RSocket"
+    } ],
+    "speakers" : [ {
+      "link" : {
+        "href" : "3b8f95a333469c079f0264b8b903184fe5082c05",
+        "rel" : "3b8f95a333469c079f0264b8b903184fe5082c05",
+        "title" : "Matt Raible"
+      },
+      "name" : "Matt Raible"
+    } ]
+  }
+} ]
