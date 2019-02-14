@@ -1,6 +1,7 @@
 include 'DevoxxClientCommon'
 include 'DevoxxClientMobile'
 include 'DevoxxRemoteFunctions'
+include 'JBCNConfRestService'
 
 rootProject.name = 'MyDevoxx'
 
