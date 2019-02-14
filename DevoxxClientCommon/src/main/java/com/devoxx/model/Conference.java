@@ -261,8 +261,9 @@ public class Conference {
     }
     
     public enum Type {
-    	MEETUP("Meetup", "Meetup"),
-        CONFERENCE("Conference", "Conference");    	
+        DEVOXX("Devoxx", "Devoxx"),
+        VOXXED("Voxxed", "VoxxedDays"),
+        MEETUP("Meetup", "Meetup");
 
         private String name;
         private String displayName;
